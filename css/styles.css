@@ -1,3 +1,5 @@
+/*  *.*_*.*  Base styles  *.*_*.*  */
+
 @import url('https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap');
 
 :root {
@@ -57,7 +59,7 @@ img {
   height: auto;
 }
 
-/* Utility classes */
+/*  *.*_*.*  UTILITY CLASSES  *.*_*.*  */
 
 .container {
   max-width: var(--max-width);
@@ -66,7 +68,62 @@ img {
   overflow: hidden;
 }
 
-/* Nav bar */
+/* Category styles */
+.category {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.category-sports {
+  background: var(--sports-color);
+}
+
+.category-entertain {
+  background: var(--entertain-color);
+}
+
+.category-tech {
+  background: var(--tech-color);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color);
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.button-light {
+  background: var(--light-color);
+}
+.button-primary {
+  background: var(--primary-color);
+}
+.button-secondary {
+  background: var(--secondary-color);
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+
+/*  *.*_*.*  Nav bar  *.*_*.*  */
 
 #main-nav {
   background: #ffffff;
@@ -115,6 +172,43 @@ img {
 }
 
 
+/*  *.*_*.*  Hero section  *.*_*.*  */
+
+#hero {
+  color: #ffffff;
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+
+/* this creates an image as the overlay instead of doing the dark overlay */
+#hero::before {
+  content: '';
+  background: url('../img/featured.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#hero .hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#hero .hero-content {
+  /* makes the text/content come to the front, in front of the image overlay */
+  z-index: 1;
+}
+
+.hero .hero-content p {
+  margin-bottom: 1rem;
+}
 
 /* 
 FLEX STYLING (alternative)
