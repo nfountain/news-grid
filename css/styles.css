@@ -186,6 +186,11 @@ img {
   padding: 3rem;
 }
 
+/* Heading */
+.l-heading {
+  font-size: 3rem;
+}
+
 /* Lists */
 .list li {
   padding: 0.5rem 0;
@@ -358,6 +363,18 @@ img {
 }
 
 
+/*  *.*_*.*  Article page  *.*_*.*  */
+
+#article .meta {
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
 
 /* 
 FLEX STYLING (alternative)
