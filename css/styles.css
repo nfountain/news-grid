@@ -39,13 +39,20 @@ h3 {
   font-family: 'Staatliches', cursive;
 }
 
-p {
+p,
+a,
+input,
+ul,
+li {
   font-size: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
 }
 
 a {
   color: inherit;
-  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -55,7 +62,6 @@ a:hover {
 
 ul {
   list-style: none;
-  font-size: 1rem;
 }
 
 img {
@@ -102,7 +108,7 @@ img {
   background: var(--dark-color);
   color: #ffffff;
   padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   z-index: 2;
 }
 
@@ -180,6 +186,16 @@ img {
   padding: 3rem;
 }
 
+/* Lists */
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #555555;
+  width: 90%;
+}
+
+.list li:hover {
+  color: var(--primary-color);
+}
 
 /*  *.*_*.*  Nav bar  *.*_*.*  */
 
@@ -291,8 +307,41 @@ img {
 }
 
 
-/*  *.*_*.*  Next section  *.*_*.*  */
+/*  *.*_*.*  Footer  *.*_*.*  */
 
+#main-footer {
+  background: var(--dark-color);
+  color: #ffffff;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+#main-footer img {
+  width: 9.375rem;
+  height: auto;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 90%;
+}
+
+
+#main-footer .footer-container > *:last-child {
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
 
 
 
