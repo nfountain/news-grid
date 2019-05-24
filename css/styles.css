@@ -44,9 +44,13 @@ p {
 }
 
 a {
-  color: var(--dark-color);
+  color: inherit;
   font-size: 1rem;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -120,6 +124,60 @@ img {
 
 .button:hover {
   opacity: 0.9;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 1rem;
+}
+
+/* Backgrounds */
+.background-dark {
+  background: var(--dark-color);
+  color: #ffffff;
+}
+
+.background-primary {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.background-secondary {
+  background: var(--secondary-color);
+  color: #ffffff;
+}
+
+.background-dark h1,
+.background-dark h2,
+.background-dark h3, 
+.background-primary h1,
+.background-primary h2,
+.background-primary h3, 
+.background-secondary h1,
+.background-secondary h2,
+.background-secondary h3 {
+  color: #ffffff;
+}
+
+/* Padding */
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
 }
 
 
@@ -209,6 +267,34 @@ img {
 .hero .hero-content p {
   margin-bottom: 1rem;
 }
+
+
+/*  *.*_*.*  Articles section  *.*_*.*  */
+
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
+}
+
+
+/*  *.*_*.*  Next section  *.*_*.*  */
+
+
+
 
 /* 
 FLEX STYLING (alternative)
