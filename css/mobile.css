@@ -53,6 +53,10 @@
 
 /* Small screens */
 @media screen and (max-width: 600px) {
+  /* Utility class */
+  .l-heading {
+    font-size: 2rem;
+  }
   /*  Make all sections 1 column  */
   #hero .hero-container,
   #home-articles .articles-container,
@@ -101,7 +105,20 @@
 
 
 /* Smaller screens */
-@media screen and (max-width: 3250px) {
+@media screen and (max-width: 420px) {
+  #article .meta {
+    flex-direction: column;
+  }
+  #article .meta small {
+    margin-left: 0;
+    margin-top: 0.4rem;
+  }
+  #article .meta .category {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 325px) {
   #hero {
     padding: 1rem;
   }
