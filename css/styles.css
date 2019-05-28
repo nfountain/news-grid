@@ -348,18 +348,18 @@ img {
 
 /*  *.*_*.*  Article page  *.*_*.*  */
 
-#article .meta {
+.page-content .meta {
   background: #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#article .meta small {
+.page-content .meta small {
   margin-left: 0.4rem;
 }
 
-#article .meta .category {
+.page-content .meta .category {
   margin: 0.4rem 0.4rem 0.4rem 0;
 }
 

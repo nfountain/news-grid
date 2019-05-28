@@ -97,8 +97,7 @@
   .page-container > *:first-child {
     grid-row: 1;
   }  
-  #about .container,
-  #article .container {
+  .page-content .container {
     padding: 0 1rem;
   }
 }
@@ -106,14 +105,14 @@
 
 /* Smaller screens */
 @media screen and (max-width: 420px) {
-  #article .meta {
+  .page-content .meta {
     flex-direction: column;
   }
-  #article .meta small {
+  .page-content .meta small {
     margin-left: 0;
     margin-top: 0.4rem;
   }
-  #article .meta .category {
+  .page-content .meta .category {
     margin-right: 0;
   }
 }
