@@ -1,0 +1,22 @@
+/*  *.*_*.*  Nav bar  *.*_*.*  */
+
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 1fr;
+  gap: 1.2rem;/*reduce on small screens*/
+  justify-content: center;
+}
+
+#main-nav .logo,
+#main-nav .links {
+  justify-self: center;
+}
+
+#main-nav .links li a {
+  padding: 0.5rem;
+}
+
+
