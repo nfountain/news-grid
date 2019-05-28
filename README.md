@@ -4,9 +4,9 @@ This is a mock-up of a news site created using CSS grid and media queries to mak
 
 ## Adding Pages
 
-A boilerplate page with the Navigation and Footer sections was created to make adding new pages simple and quick. The id for the content section would need to be changed and any specific styling for that ID would need to be added to the CSS stylesheets for (base/large screen styles)[css/styles.css], and (mobile styles[mobile.css].
+A boilerplate page with the Navigation and Footer sections was created to make adding new pages simple and quick. The id for the content section would need to be changed and any specific styling for that ID would need to be added to the CSS stylesheets for [base/large screen styles](css/styles.css), and [mobile styles](css/mobile.css).
 
-To simplify the process for adding pages, and reduce the number of edits in the styleshees when adding new pages, I will add a class that sets up the base styling for the content section. 
+To simplify the process for adding pages, and reduce the number of edits in the styleshees when adding new pages, I will add a class that sets up the base styling for the content section.
 
 ## Credits
 
